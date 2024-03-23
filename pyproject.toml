@@ -36,18 +36,16 @@ log_cli = true
 log_cli_format = "%(asctime)s.%(msecs)03d %(name)s: %(lineno)s %(levelname)s: %(message)s"
 log_cli_level = "INFO"
 log_cli_date_format = "%H:%M:%S"
-markers = [
-    "real_api_call: Tests making requests to api.esios.ree.es (deselected by default)",
-]
+
 
 [tool.poetry]
 name = "tariff-td"
 version = "1.0"
-description = "Calcula el periodo actual según las Tarifas TD 2.0 y 3.0"
+description = "Calcula el periodo actual según las Tarifas Españolas TD 2.0 y 3.0"
 authors = ["Miguel Ángel López <miguel.angel.lopez.vicente@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/miguelangellv/py-tariff-td"
+repository = "https://github.com/miguelangellv/python-tariff-td"
 
 [tool.poetry.dependencies]
 python = ">=3.9"
