@@ -29,7 +29,7 @@ class TariffTD:
 
     def __init__(self: "TariffTD") -> None:
         """Initialize spanish holidays."""
-        self._holidays = holidays.country_holidays('ES')
+        self._holidays = holidays.country_holidays("ES")
         # Remove "Viernes Santo"
         for v in HOLY_FRIDAYS:
             self._holidays.pop(v)

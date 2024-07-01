@@ -1,6 +1,4 @@
-
 from tariff_td import HOLY_FRIDAYS, P1, P2, P3, P4, P5, P6, Tariff30TD
-
 from tests import get_date
 
 PRICE1 = 1
