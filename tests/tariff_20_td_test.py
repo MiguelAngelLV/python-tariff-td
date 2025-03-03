@@ -1,6 +1,4 @@
-import unittest
-
-from tariff_td import Tariff20TD, HOLY_FRIDAYS, P1, P2, P3
+from tariff_td import HOLY_FRIDAYS, P1, P2, P3, Tariff20TD
 from tests import get_date
 
 PRICE1 = 1
