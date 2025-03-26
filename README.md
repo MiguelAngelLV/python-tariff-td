@@ -5,7 +5,6 @@ Tariff TD es una biblioteca para Python que permite determinar el periodo de las
 Esta biblioteca usa los festivos proporcionados por la biblioteca `hollidays` pero elimina los `Viernes Santos`, puesto que dicho festivo,
 al cambiar de fecha cada año, no es considerado valle.
 
-
 ## Ejemplo de suo
 
 ```python
