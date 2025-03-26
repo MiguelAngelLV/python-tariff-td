@@ -1,6 +1,4 @@
-import unittest
-
-from tariff_td import Tariff20TD, HOLY_FRIDAYS, P1, P2, P3
+from tariff_td import HOLY_FRIDAYS, P1, P2, P3, Tariff20TD
 from tests import get_date
 
 PRICE1 = 1
@@ -73,10 +71,12 @@ def test_all_holy_fridays_are_not_holidays():
         date = get_date(f"{f} 12:00:00")
         assert tariff.get_period(date) == P1
 
+
 def test_get_holiday_day_prices():
     date = get_date("2024-01-06 12:00:00")
     prices = tariff.get_day_prices(date)
     assert all(p == PRICE3 for p in prices)
+
 
 def test_get_weekend_day_prices():
     date = get_date("2024-01-04 12:00:00")
