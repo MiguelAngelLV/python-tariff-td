@@ -70,3 +70,21 @@ def test_all_holy_fridays_are_not_holidays():
     for f in HOLY_FRIDAYS:
         date = get_date(f"{f} 12:00:00")
         assert tariff.get_period(date) == P1
+
+
+def test_get_holiday_day_prices():
+    date = get_date("2024-01-06 12:00:00")
+    prices = tariff.get_day_prices(date)
+    assert all(p == PRICE3 for p in prices)
+
+
+def test_get_weekend_day_prices():
+    date = get_date("2024-01-04 12:00:00")
+    prices = tariff.get_day_prices(date)
+    for i, p in enumerate(prices):
+        if i < 8:
+            assert p == PRICE3
+        elif i < 10 or 14 <= i < 18 or i >= 22:
+            assert p == PRICE2
+        else:
+            assert p == PRICE1
