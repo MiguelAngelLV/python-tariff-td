@@ -42,6 +42,10 @@ class TariffTD:
     def get_price(self: "TariffTD", date: datetime) -> float:
         """Return the electricity price of specific date."""
 
+    def get_day_prices(self, date: datetime) -> list[float]:
+        """Return the electricity prices for each hour of the specified date."""
+        return [self.get_price(date.replace(hour=h)) for h in range(24)]
+
 
 class Tariff20TD(TariffTD):
     """Tariff 2.0 TD definition."""

@@ -40,7 +40,7 @@ log_cli_date_format = "%H:%M:%S"
 
 [tool.poetry]
 name = "tariff-td"
-version = "1.0"
+version = "1.1"
 description = "Calcula el periodo actual según las Tarifas Españolas TD 2.0 y 3.0"
 authors = ["Miguel Ángel López <miguel.angel.lopez.vicente@gmail.com>"]
 license = "MIT"
