@@ -8,7 +8,6 @@ al cambiar de fecha cada año, no es considerado valle.
 ## Ejemplo de suo
 
 ```python
-
 from datetime import datetime
 
 from src.tariff_td import Tariff20TD
